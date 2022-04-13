@@ -33,7 +33,7 @@ function App() {
 
   const deleteNote = (id) => {
     console.log(id);
-    Axios.delete(`https://keeper-app-backendd.herokuapp.com//delete/${id}`).then(() => {
+    Axios.delete(`https://keeper-app-backendd.herokuapp.com/delete/${id}`).then(() => {
       setNotes(noteList.filter((val) => {
         return val._id !== id;
       }))
